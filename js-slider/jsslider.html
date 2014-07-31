@@ -1,0 +1,60 @@
+ <!--DOCTYPE HTML-->
+ <html>
+  <head>
+  <title>FTFL Online registration System</title>
+  <meta charset="UTF-8"/>
+  <script type="text/javascript" >
+ 
+  var image1= new Image();
+  var image2=new Image();
+  var image3= new Image();
+  var image4=new Image();
+  var image5= new Image();
+  var image6=new Image();
+  var image7= new Image();
+  var image8=new Image();
+  var image9= new Image();
+  var image10=new Image();
+  var image11= new Image();
+  var image12=new Image();
+  var image13= new Image();
+  image1.src="image1.jpeg";
+  image2.src="image2.jpeg";
+  image3.src="image3.jpeg";
+  image4.src="image4.jpeg";
+  image5.src="image5.jpeg";
+  image6.src="image6.jpeg";
+  image7.src="image7.jpeg";
+  image8.src="image8.jpeg";
+  image9.src="image9.jpeg";
+  image10.src="image10.jpeg";
+  image11.src="image11.jpeg";
+  image12.src="image12.jpeg";
+  image13.src="image13.jpeg";
+
+  </script>
+  
+  </head>
+  <body>
+  <div>
+  	<img src="image1.jpeg" name="slide" width="300" height="200"/>
+  	<script type="text/javascript">
+  	console.log(typeof(eval));
+  	var step=1;
+	  	function slider(){
+	  		document.images.slide.src=eval("image"+step+".src");
+	  		if(step<13)
+	  			step++;
+	  		else 
+	  			step=1;
+	  		setTimeout("slider()",2500);
+
+	  	}
+  	
+  	slider();
+  	</script>
+
+  </div>
+
+  </body>
+</html>

@@ -30,9 +30,15 @@ xmlhttp.onreadystatechange=function()
     objCountries = JSON.parse(xmlhttp.responseText);
     //console.log(typeof(obj));
     alert(objCountries.countries.length);
+    for($count=0;$count<objCountries.countries.length;$count++)
+    {
+    document.write(objCountries.countries[$count].country.country_id);
+    document.write("    ");
+    document.write(objCountries.countries[$count].country.country_name);
+    document.write("<br/>");
     
-    //alert(objCountries.countries[0].country.country_id);
-    
+    }
+     document.close();
     }
   }
 xmlhttp.open("GET","country.txt",true);
